@@ -5,7 +5,7 @@
   "main": "distribution/index.js",
   "scripts": {
     "test": "tape tests/**/*.spec.js | tap-spec",
-    "build": "babel index.js --presets latest --out-dir distribution",
+    "build": "babel index.js styles.js constants.js utils.js --presets latest --out-dir distribution",
     "prepublish": "npm run build"
   },
   "repository": {
